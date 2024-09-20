@@ -1,0 +1,270 @@
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color:white;
+  }
+  
+  body{
+  background-color: #24252a;
+  font-family:'Montserrat';
+  overflow-x: hidden;
+  }
+  .navbar {
+    display: flex;
+    position: fixed;
+    z-index: 100;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10%;
+    background-color: #24252a;
+    position: fixed;
+    width: 100%;
+  }
+  
+  .logo {
+    cursor: pointer;
+  }
+  
+  .nav__links a,.menuSum__content a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #edf0f1;
+    text-decoration: none;
+  }
+  
+  .nav__links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav__links li {
+    padding: 0px 20px;
+  }
+  
+  .nav__links li a {
+    transition: color 0.3s ease 0s;
+  }
+  
+  .nav__links li a:hover {
+    color: #0088a9;
+  }
+  
+  .menu{
+    display:none;
+    cursor: pointer;
+  }
+
+  .menu:hover{
+    color:#0088a9;
+  }
+
+  .menuSum {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: #24252a;
+    overflow-x: hidden;
+    transition: width 0.5s ease 0s;
+  }
+
+  .menuSumactive {
+    width: 100%;
+  }
+
+  .menuSum__content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menuSum a {
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: color 0.3s ease 0s;
+  }
+  
+  .menuSum a:hover,
+  .menuSum a:focus {
+    color: #0088a9;
+    transform: scale(1.1);
+  }
+  
+ .container-1{
+  width: 100%;
+  min-height: 100vh;
+  background: url("/Events/photo/room.jpg");  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+ }
+ .container-1 .overlay{
+  width: inherit;
+  height:inherit;
+  backdrop-filter: brightness(40%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white ;
+ }
+
+ .container-1 .overlay h1{
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  padding-left: 5%;
+  margin-bottom: 2%;
+ }
+
+ .container-1 .overlay p{
+   max-width: 60vw;
+   padding-left: 5%;
+   font-size: 16px;
+ }
+
+.container-2{
+  width: 100%;
+
+  min-height: 100vh;
+}
+
+h2{
+  margin: 7vw 40vw;
+  font-size: 3vw;
+  font-family:"Montserrat";
+  width: 100%;
+}
+.containerEvent{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 8vw;
+}
+.eventdetails{
+  text-align: right;
+  width: 50%;
+  margin-inline: 1%;
+  justify-content: center;
+  order:1;
+}
+
+.eventdetails p1,.eventdetails p2 {
+  display: block;
+}
+
+.eventdetails p2{
+    font-size: 30px;
+    color: lightblue;
+}
+
+.eventdetails p6{
+    font-size: 30px;
+    color: rgba(255, 0, 0, 0.815);
+}
+
+.eventdetails p7{
+    font-size: 30px;
+    color: lightsalmon;
+}
+
+.eventdetails p8{
+    font-size: 30px;
+    color: lightseagreen;
+}
+
+
+.eventdetails hr {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.eventdetails p3{
+    margin-top:100%;
+}
+
+.eventdetails p3,.eventdetails p4,.eventdetails p5{
+    font-family: sans-serif;
+}
+
+.event {
+  border: solid 2px white;
+  margin-inline: 4%;
+  justify-content: right;
+  order:2;
+}
+
+.Videos {
+  width: 100%;
+  display: flex;
+}
+
+.Videos img {
+  position: sticky;
+  width: 100%;
+  height: 100%;
+}
+footer{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerDetails{
+  text-align: center;
+  width: 23%;
+  margin-inline: 1%;
+  margin-top: 1%;
+  justify-content: center;
+}
+
+.SocialMedia{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.Social{
+  text-align:center;
+  width:23%;
+  margin-top: 2%;
+  justify-content: center;
+}
+
+.Social img{
+   width:100%;
+}
+
+@media (max-width: 768px) {
+  .nav__links{
+    display: none;
+  }
+  .menu {
+    display: initial;
+  }
+  .eventdetails{
+    width: 48%;
+  }
+  .details{
+    width:48%;
+  }
+  .Videos{
+    width: 100%;
+    align-items: center;
+  }
+  
+}
+  
